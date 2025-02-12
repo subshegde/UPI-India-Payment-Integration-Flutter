@@ -14,32 +14,22 @@ This Flutter project demonstrates how to integrate **UPI payments** using the `u
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/upi-payment-integration-flutter.git
-   cd upi-payment-integration-flutter
+   git clone https://github.com/subshegde/UPI-India-Payment-Integration-Flutter.git
 
-    Install dependencies
-
-    In your terminal, run:
-
+# Install dependencies
     flutter pub get
-
-    Add the necessary permissions (Android & iOS)
-
-    For Android, ensure that the AndroidManifest.xml is set up to handle UPI intents and permissions.
-
-    For iOS, make sure to add the required configurations in the Info.plist file.
-
-How to Use
-
-    UI Flow
+    
+# How to Use:
+# UI Flow
         Enter the amount, receiver's UPI ID, and receiver's name.
         Select a UPI app from the available apps list.
         Complete the transaction through the selected UPI app.
-    Transaction Flow
+        
+# Transaction Flow
         The app initiates the transaction and listens for the response (success, failure, or submission).
         The transaction status is displayed along with transaction details like Transaction ID, Response Code, Approval Ref, etc.
 
-Example
+# Example
 
 final UpiIndia _upiIndia = UpiIndia();
 
@@ -58,25 +48,22 @@ Future<UpiResponse> initiateTransaction(UpiApp app) async {
   );
 }
 
-Dependencies
-
+# Dependencies
     upi_india: ^3.0.1: UPI payment handling package for Flutter.
 
-Error Handling
+# Error Handling
 
 The app handles various error scenarios:
-
     App not installed (UpiIndiaAppNotInstalledException)
     User cancels transaction (UpiIndiaUserCancelledException)
     Invalid parameters (UpiIndiaInvalidParametersException)
 
-Screenshots
+# Screenshots
 
-Contributing
+![UPI ](https://github.com/user-attachments/assets/5b4df1b5-a146-43ed-b1ab-dec5044e1e27)
 
+
+# Contributing
 Feel free to fork this repository, submit issues, or make pull requests. Contributions are welcome!
-License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Developed with ❤️ by @SSHegde.Visuals
+Developed with ❤️🍹  by🎥 @SSHegde.Visuals
